@@ -25,6 +25,13 @@ body{
     padding:60px 20px;
 }
 
+.hero img{
+    width:100%;
+    max-width:500px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
 .hero h1{
     font-size:2.5rem;
     margin-bottom:15px;
@@ -95,11 +102,28 @@ footer{
     background:#222;
     color:white;
 }
+
+/* NOVO */
+.listas{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+@media(max-width:700px){
+    .listas{
+        grid-template-columns:1fr;
+    }
+}
 </style>
 </head>
 <body>
 
 <section class="hero">
+
+    <!-- IMAGEM -->
+    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" alt="Emagrecimento saudável">
+
     <h1>🔥 Emagreça de Forma Saudável</h1>
     <p>Descubra estratégias práticas para perder peso, melhorar sua alimentação e transformar seu corpo sem dietas radicais.</p>
 </section>
@@ -110,18 +134,40 @@ footer{
         <h2>O que você vai aprender?</h2>
         <br>
         <div class="beneficios">
-            <div class="beneficio">
-                ✅ Métodos simples para emagrecer.
+            <div class="beneficio">✅ Métodos simples para emagrecer.</div>
+            <div class="beneficio">✅ Como controlar a fome e a ansiedade.</div>
+            <div class="beneficio">✅ Alimentação saudável sem sofrimento.</div>
+            <div class="beneficio">✅ Plano prático para começar hoje.</div>
+        </div>
+    </div>
+
+    <!-- PONTOS POSITIVOS E NEGATIVOS -->
+    <div class="card">
+        <h2>Mais informações importantes</h2>
+        <br>
+
+        <div class="listas">
+
+            <div>
+                <h3>👍 Pontos Positivos</h3>
+                <ul>
+                    <li>Conteúdo simples e direto</li>
+                    <li>Ajuda na reeducação alimentar</li>
+                    <li>Pode ser usado por iniciantes</li>
+                    <li>Acesso imediato após compra</li>
+                </ul>
             </div>
-            <div class="beneficio">
-                ✅ Como controlar a fome e a ansiedade.
+
+            <div>
+                <h3>👎 Pontos Negativos</h3>
+                <ul>
+                    <li>Resultados variam por pessoa</li>
+                    <li>Exige disciplina diária</li>
+                    <li>Não substitui profissional da saúde</li>
+                    <li>Depende de aplicação prática</li>
+                </ul>
             </div>
-            <div class="beneficio">
-                ✅ Alimentação saudável sem sofrimento.
-            </div>
-            <div class="beneficio">
-                ✅ Plano prático para começar hoje.
-            </div>
+
         </div>
     </div>
 
