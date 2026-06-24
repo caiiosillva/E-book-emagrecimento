@@ -1,147 +1,136 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Emagreça em 30 Dias</title>
+<title>E-book Emagreça de Forma Saudável</title>
 
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
 body{
-background:#f5f5f5;
-color:#222;
-line-height:1.6;
+    background:#f5f5f5;
+    color:#333;
 }
 
+/* HERO */
 .hero{
-background:#1fa84f;
-color:white;
-text-align:center;
-padding:40px 20px;
+    background:linear-gradient(135deg,#28a745,#1d7f35);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
 }
 
 .hero img{
-width:100%;
-max-width:750px;
-border-radius:25px;
-display:block;
-margin:0 auto 30px auto;
+    width:100%;
+    max-width:500px;
+    border-radius:15px;
+    margin-bottom:20px;
 }
 
 .hero h1{
-font-size:56px;
-font-weight:800;
-line-height:1.1;
-margin-bottom:20px;
+    font-size:2.3rem;
+    margin-bottom:15px;
 }
 
 .hero p{
-font-size:20px;
-max-width:800px;
-margin:auto;
+    font-size:1.1rem;
+    max-width:700px;
+    margin:auto;
 }
 
-.section{
-max-width:1100px;
-margin:auto;
-padding:60px 20px;
+/* CONTAINER */
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
 }
 
-.section h2{
-text-align:center;
-margin-bottom:20px;
-font-size:42px;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:30px;
-}
-
+/* CARDS */
 .card{
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom:20px;
 }
 
-.card h3{
-margin-bottom:10px;
+/* BENEFÍCIOS */
+.beneficios{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
 }
 
-.price-box{
-background:#1fa84f;
-max-width:900px;
-margin:50px auto;
-padding:40px;
-text-align:center;
-border-radius:20px;
-color:white;
+.beneficio{
+    background:#fff;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
 }
 
-.old{
-text-decoration:line-through;
-font-size:24px;
-opacity:.8;
+/* PREÇO */
+.preco{
+    text-align:center;
 }
 
-.new{
-font-size:60px;
-font-weight:bold;
-color:#ffcc00;
+.preco h2{
+    font-size:3rem;
+    color:#28a745;
+    margin:15px 0;
 }
 
-.btn{
-display:inline-block;
-margin-top:25px;
-background:#ffb400;
-color:#000;
-padding:18px 35px;
-font-size:22px;
-font-weight:bold;
-text-decoration:none;
-border-radius:10px;
+/* BOTÃO */
+.botao{
+    display:inline-block;
+    background:#25d366;
+    color:white;
+    text-decoration:none;
+    padding:18px 45px;
+    border-radius:30px;
+    font-size:1.3rem;
+    font-weight:bold;
+    box-shadow:0 4px 15px rgba(37,211,102,0.4);
+    transition:0.2s;
 }
 
-.guarantee{
-background:#e9f9ee;
-text-align:center;
-padding:60px 20px;
+.botao:hover{
+    opacity:0.9;
 }
 
+/* DEPOIMENTO */
+.depoimento{
+    font-style:italic;
+    background:#f9f9f9;
+    padding:15px;
+    border-left:5px solid #28a745;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+/* FAQ */
+.faq h3{
+    margin-top:15px;
+}
+
+/* RODAPÉ */
 footer{
-background:#111;
-color:white;
-text-align:center;
-padding:25px;
+    text-align:center;
+    padding:20px;
+    background:#222;
+    color:white;
 }
 
-@media(max-width:768px){
-
-.hero h1{
-font-size:38px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-.new{
-font-size:48px;
-}
-
-.section h2{
-font-size:32px;
-}
-
+@media(max-width:700px){
+    .hero h1{
+        font-size:1.8rem;
+    }
 }
 </style>
 </head>
@@ -150,101 +139,125 @@ font-size:32px;
 
 <section class="hero">
 
-<img src="1000420196.jpg" alt="Emagreça de Forma Saudável">
+    <!-- TROQUE PELO NOME DA SUA IMAGEM -->
+    <img src="1000420196.jpg" alt="Emagreça de Forma Saudável">
 
-<h1>🔥 Emagreça de Forma Saudável</h1>
+    <h1>🔥 Emagreça de Forma Saudável</h1>
 
-<p>
-Descubra estratégias práticas para perder peso, melhorar sua alimentação e transformar seu corpo sem dietas radicais.
-</p>
-
-</section>
-
-<section class="section">
-
-<h2>O Que Você Vai Aprender?</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>✅ Métodos Simples</h3>
-<p>Aprenda estratégias práticas para emagrecer de forma saudável.</p>
-</div>
-
-<div class="card">
-<h3>✅ Controle da Fome</h3>
-<p>Descubra como reduzir a ansiedade e controlar a alimentação.</p>
-</div>
-
-<div class="card">
-<h3>✅ Mais Foco</h3>
-<p>Técnicas para manter a disciplina durante os 30 dias.</p>
-</div>
-
-</div>
+    <p>
+        Descubra estratégias práticas para perder peso, melhorar sua alimentação e transformar seu corpo sem dietas radicais.
+    </p>
 
 </section>
 
-<section class="section">
+<div class="container">
 
-<h2>O Que Você Vai Receber</h2>
+    <div class="card">
+        <h2>O Que Você Vai Aprender?</h2>
+        <br>
 
-<div class="cards">
+        <div class="beneficios">
 
-<div class="card">
-<h3>🏠 Treinos em Casa</h3>
-<p>Exercícios rápidos que podem ser feitos sem academia.</p>
+            <div class="beneficio">
+                <h3>✅ Métodos Simples</h3>
+                <p>Aprenda estratégias práticas para emagrecer de forma saudável.</p>
+            </div>
+
+            <div class="beneficio">
+                <h3>✅ Controle da Fome</h3>
+                <p>Descubra como reduzir a ansiedade e controlar a alimentação.</p>
+            </div>
+
+            <div class="beneficio">
+                <h3>✅ Mais Foco</h3>
+                <p>Técnicas para manter a disciplina durante os 30 dias.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>O Que Você Vai Receber</h2>
+        <br>
+
+        <div class="beneficios">
+
+            <div class="beneficio">
+                <h3>🏠 Treinos em Casa</h3>
+                <p>Exercícios rápidos que podem ser feitos sem academia.</p>
+            </div>
+
+            <div class="beneficio">
+                <h3>📅 Plano de 30 Dias</h3>
+                <p>Passo a passo organizado para facilitar sua evolução.</p>
+            </div>
+
+            <div class="beneficio">
+                <h3>📖 Guia Alimentar</h3>
+                <p>Dicas práticas para melhorar sua alimentação.</p>
+            </div>
+
+            <div class="beneficio">
+                <h3>🎁 Bônus Exclusivos</h3>
+                <p>Receitas e materiais extras para potencializar seus resultados.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>⭐ Depoimento</h2>
+
+        <div class="depoimento">
+            "Comecei a seguir as dicas e em poucas semanas já senti diferença na minha alimentação e disposição!"
+            <br><br>
+            — Maria S.
+        </div>
+    </div>
+
+    <div class="card faq">
+
+        <h2>❓ Perguntas Frequentes</h2>
+
+        <h3>Como recebo o e-book?</h3>
+        <p>Após a compra, você recebe automaticamente no seu e-mail.</p>
+
+        <h3>É seguro comprar?</h3>
+        <p>Sim, o pagamento é processado pela Kiwify com segurança.</p>
+
+        <h3>Funciona para qualquer pessoa?</h3>
+        <p>Os resultados variam de pessoa para pessoa e dependem da aplicação do conteúdo.</p>
+
+    </div>
+
+    <div class="card preco">
+
+        <h3>Oferta Especial</h3>
+
+        <h2>R$ 27,90</h2>
+
+        <p>Acesso imediato ao e-book digital.</p>
+
+        <br>
+
+        <a class="botao"
+        href="https://pay.kiwify.com.br/GV2eaEj?afid=i6Z8Y2H9"
+        target="_blank">
+        COMPRAR AGORA
+        </a>
+
+        <br><br>
+
+        <p>🔒 Pagamento Seguro</p>
+
+    </div>
+
 </div>
-
-<div class="card">
-<h3>📅 Plano de 30 Dias</h3>
-<p>Passo a passo organizado para facilitar sua evolução.</p>
-</div>
-
-<div class="card">
-<h3>📖 Guia Alimentar</h3>
-<p>Dicas práticas para melhorar sua alimentação.</p>
-</div>
-
-<div class="card">
-<h3>🎁 Bônus Exclusivos</h3>
-<p>Receitas e materiais extras para potencializar seus resultados.</p>
-</div>
-
-</div>
-
-</section>
-
-<div class="price-box">
-
-<p class="old">De R$ 97,00</p>
-
-<p>Por apenas:</p>
-
-<p class="new">R$ 27,90</p>
-
-<a class="btn"
-href="https://pay.kiwify.com.br/GV2eaEj?afid=i6Z8Y2H9"
-target="_blank">
-QUERO EMAGRECER AGORA
-</a>
-
-</div>
-
-<section class="guarantee">
-
-<h2>Garantia de 7 Dias</h2>
-
-<p>
-Se por qualquer motivo você não ficar satisfeito com o conteúdo,
-poderá solicitar reembolso dentro do prazo disponibilizado pela plataforma.
-</p>
-
-</section>
 
 <footer>
-© 2025 Emagreça em 30 Dias - Todos os direitos reservados.
+© 2026 - Todos os direitos reservados.
 </footer>
 
 </body>
 </html>
+```
